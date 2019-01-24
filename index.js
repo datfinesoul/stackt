@@ -11,7 +11,7 @@ module.exports = (stack, options) => {
     const output = stack
     .split('\n')
     .reduce((lines, line) => {
-      const core = line.match(/^\s+at ([^ ]+) \(([^)]+)\)$/);
+      const core = line.match(/^\s+at (?:([^ ]+) )?\(?([^)]+)\)?$/);
       if (
         (core === null)
         || (!core[2])
@@ -20,7 +20,11 @@ module.exports = (stack, options) => {
       ){
         return lines;
       }
-      lines.push(`${padding}at ${core[1]} (${core[2].replace(workingDir, '')})`);
+      if (core[1]) {
+        lines.push(`${padding}at ${core[1]} (${core[2].replace(workingDir, '')})`);
+      } else {
+        lines.push(`${padding}at ${core[2].replace(workingDir, '')}`);
+      }
       return lines;
     }, [])
     if (options.array) {

@@ -1,6 +1,6 @@
 {
   "name": "stackt",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Smaller stack traces with options",
   "main": "index.js",
   "scripts": {

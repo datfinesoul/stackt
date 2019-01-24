@@ -1,0 +1,25 @@
+TypeError: k.split is not a function
+    at /home/ubuntu/app/lib/epi.coffee:8:18
+    at /home/ubuntu/app/node_modules/lodash/lodash.js:935:11
+    at /home/ubuntu/app/node_modules/lodash/lodash.js:4920:15
+    at baseReduce (/home/ubuntu/app/node_modules/lodash/lodash.js:932:5)
+    at Function.reduce (/home/ubuntu/app/node_modules/lodash/lodash.js:9698:14)
+    at extractSubdocs (/home/ubuntu/app/lib/epi.coffee:7:5)
+    at /home/ubuntu/app/lib/epi.coffee:41:18
+    at /home/ubuntu/app/node_modules/lodash/lodash.js:935:11
+    at /home/ubuntu/app/node_modules/lodash/lodash.js:4944:15
+    at baseForOwn (/home/ubuntu/app/node_modules/lodash/lodash.js:3001:24)
+    at /home/ubuntu/app/node_modules/lodash/lodash.js:4913:18
+    at baseReduce (/home/ubuntu/app/node_modules/lodash/lodash.js:932:5)
+    at Function.reduce (/home/ubuntu/app/node_modules/lodash/lodash.js:9698:14)
+    at /home/ubuntu/app/lib/epi.coffee:37:7
+    at tryCatcher (/home/ubuntu/app/node_modules/bluebird/js/main/util.js:26:23)
+    at Promise._settlePromiseFromHandler (/home/ubuntu/app/node_modules/bluebird/js/main/promise.js:503:31)
+    at Promise._settlePromiseAt (/home/ubuntu/app/node_modules/bluebird/js/main/promise.js:577:18)
+    at Promise._settlePromises (/home/ubuntu/app/node_modules/bluebird/js/main/promise.js:693:14)
+    at Async._drainQueue (/home/ubuntu/app/node_modules/bluebird/js/main/async.js:123:16)
+    at Async._drainQueues (/home/ubuntu/app/node_modules/bluebird/js/main/async.js:133:10)
+    at Immediate.Async.drainQueues (/home/ubuntu/app/node_modules/bluebird/js/main/async.js:15:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
